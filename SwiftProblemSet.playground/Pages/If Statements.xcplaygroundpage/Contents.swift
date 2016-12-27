@@ -76,7 +76,18 @@ func checkForRelease(bugs: Int, music: Bool, levels: Int) {
     }
     else
     {
-        print("\(game) needs to be fixed")
+        if(bugs >= 10)
+        {
+            print("\(game) has 10 bugs or more")
+        }
+        if(!hasMusic)
+        {
+            print("\(game) has no music")
+        }
+        if(levels < 5)
+        {
+            print("\(game) has less than 5 levels")
+        }
     }
     
 }
